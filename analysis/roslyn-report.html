@@ -71,6 +71,9 @@
         }
 
         function onLoad() {
+            const date = new Date();
+            document.getElementById('date').textContent = date.toUTCString();
+
             calculateMaintainabilityIndex();
         }
 
@@ -193,7 +196,7 @@
 
 <body onload="onLoad()">
 <div class=WordSection1>
-    <h1>Overview of Report</h1>
+    <h1>Overview of Report <span id="date"></span></h1>
 
     <p class=MsoNormal>This report contains details of C# code state. Automated code analysis tools like Roslyn were used to evaluate level of issues.</p>
 
@@ -443,7 +446,7 @@
                 <p class=MsoNormal style='margin-bottom:0;line-height:normal'>Control structures should use curly braces</p>
             </td>
             <td style='width:197.05pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0 5.4pt 0 5.4pt'>
-                <p class=MsoNormal style='margin-bottom:0;line-height:normal'>Add curly braces around the nested statement(s) in this 'foreach' block.</p>
+                <p class=MsoNormal style='margin-bottom:0;line-height:normal'>Add curly braces around the nested statement(s) in this 'if' block.</p>
             </td>
             <td style='width:52.6pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0 5.4pt 0 5.4pt'>
                 <p class=MsoNormal style='margin-bottom:0;line-height:normal'>37</p>
@@ -545,7 +548,7 @@
                 <p class=MsoNormal style='margin-bottom:0;line-height:normal'>Magic numbers should not be used</p>
             </td>
             <td style='width:197.05pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0 5.4pt 0 5.4pt'>
-                <p class=MsoNormal style='margin-bottom:0;line-height:normal'>Assign this magic number '15' to a well-named (variable|constant), and use the (variable|constant) instead.</p>
+                <p class=MsoNormal style='margin-bottom:0;line-height:normal'>Assign this magic number '60' to a well-named (variable|constant), and use the (variable|constant) instead.</p>
             </td>
             <td style='width:52.6pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0 5.4pt 0 5.4pt'>
                 <p class=MsoNormal style='margin-bottom:0;line-height:normal'>12</p>
