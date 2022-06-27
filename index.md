@@ -2,5 +2,5 @@
 
 ### Analyzers reports
 
-#### [Security report](analysis/security-report.html)
-#### [Roslyn report](analysis/roslyn-report.html)
+#### [Security report](security.md)
+#### [Roslyn report](roslyn.md)
